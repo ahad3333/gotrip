@@ -95,13 +95,13 @@ nav ul li a {
     margin-top: 40px;
 }
 
-.destination {
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    margin: 10px; /* Added for spacing */
+.destination img {
+    width: 100%; /* Rasmni konteynerning kengligiga moslashtirish */
+    height: auto; /* Rasmning balandligini avtomatik qiling */
+    object-fit: cover; /* Rasmni konteynerga moslash */
+    border-radius: 10px 10px 0 0; /* Yuqori burchaklarni yumaloqlash */
 }
+
 
 .destination:hover {
     transform: scale(1.05);
@@ -178,4 +178,22 @@ footer {
     nav ul li {
         margin: 5px 0; /* Adjust margin for vertical alignment */
     }
+    @media (max-width: 768px) {
+        .destination {
+            width: 90%; /* Kichik ekranlar uchun kenglikni moslashtirish */
+            margin: 10px auto; /* Markazlashtirish va biroz bo'sh joy qo'shish */
+        }
+    }    
 }
+.logo {
+    display: flex;
+    align-items: center; /* Vertikal ravishda markazlashtirish */
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Dumaloq shakl berish */
+    margin-right: 10px; /* Matn bilan oraliq qo'shish */
+}
+
