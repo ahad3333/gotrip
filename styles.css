@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Added to allow wrapping */
 }
 
 .logo {
@@ -31,6 +32,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Added to allow wrapping */
 }
 
 nav ul li {
@@ -45,7 +47,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('./image\ copy.png'); /* Orqa fondagi rasm */
+    background-image: url('./image copy.png'); /* Orqa fondagi rasm */
     background-size: cover; /* Rasimni butun blokni qamrab olish */
     background-position: center; /* Rasmni markazga joylashtirish */
     height: 100vh; /* Bo'limning balandligini 100% ekran qilish */
@@ -56,7 +58,6 @@ nav ul li a {
     color: #f7f4f5; /* Matnni oq rangda qilish */
     position: relative;
 }
-
 
 .hero-content h1 {
     font-size: 3.5em;
@@ -80,8 +81,6 @@ nav ul li a {
     margin-top: 20px; /* Buttonning yuqorisiga bo'sh joy qo'shadi */
 }
 
-
-
 /* Destinations Section */
 .destinations-section {
     background-color: #fff;
@@ -92,6 +91,7 @@ nav ul li a {
 .destination-grid {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Added to allow wrapping */
     margin-top: 40px;
 }
 
@@ -100,6 +100,7 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease;
+    margin: 10px; /* Added for spacing */
 }
 
 .destination:hover {
@@ -113,11 +114,11 @@ nav ul li a {
     border-radius: 10px 10px 0 0; /* Yuqori burchaklarni yumaloqlash */
 }
 
-
 /* Services Section */
 .services-grid {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Added to allow wrapping */
     margin-top: 40px;
 }
 
@@ -128,6 +129,7 @@ nav ul li a {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    margin: 10px; /* Added for spacing */
 }
 
 /* Footer */
@@ -136,4 +138,44 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+    }
+
+    .destination, .service {
+        width: 90%; /* Full width on small screens */
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em; /* Further adjust font size */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    header {
+        flex-direction: column; /* Stack elements in header */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Full width for mobile */
+        padding: 0; /* Remove padding */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical alignment */
+    }
 }
