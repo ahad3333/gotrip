@@ -1,0 +1,139 @@
+/* Umumiy CSS sozlamalari */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('./image\ copy.png'); /* Orqa fondagi rasm */
+    background-size: cover; /* Rasimni butun blokni qamrab olish */
+    background-position: center; /* Rasmni markazga joylashtirish */
+    height: 100vh; /* Bo'limning balandligini 100% ekran qilish */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f7f4f5; /* Matnni oq rangda qilish */
+    position: relative;
+}
+
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgb(143, 104, 104);
+}
+
+.hero-content p {
+    margin-bottom: 20px; /* Yozuvning pastida bo'sh joy qo'shadi */
+    text-shadow: 2px 2px 4px rgb(143, 104, 104);
+}
+
+.cta-button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Buttonning yuqorisiga bo'sh joy qo'shadi */
+}
+
+
+
+/* Destinations Section */
+.destinations-section {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.destination-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.destination {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+.destination img {
+    width: 100%; /* Rasmni konteynerning kengligiga moslashtirish */
+    height: 200px; /* Rasmning statik balandligi */
+    object-fit: cover; /* Rasmning nisbatlarini saqlash va kesish */
+    border-radius: 10px 10px 0 0; /* Yuqori burchaklarni yumaloqlash */
+}
+
+
+/* Services Section */
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.service {
+    width: 30%;
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
