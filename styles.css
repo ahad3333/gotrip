@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #ff7f50;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -47,7 +47,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('./image copy.png'); /* Orqa fondagi rasm */
+    background-image: url('./images/b_shamol.png'); /* Orqa fondagi rasm */
     background-size: cover; /* Rasimni butun blokni qamrab olish */
     background-position: center; /* Rasmni markazga joylashtirish */
     height: 100vh; /* Bo'limning balandligini 100% ekran qilish */
@@ -62,7 +62,7 @@ nav ul li a {
 .hero-content h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgb(143, 104, 104);
+    text-shadow: 2px 2px 4px rgb(172, 111, 111);
 }
 
 .hero-content p {
@@ -195,5 +195,8 @@ footer {
     height: 50px;
     border-radius: 50%; /* Dumaloq shakl berish */
     margin-right: 10px; /* Matn bilan oraliq qo'shish */
+}
+.destination {
+    margin-bottom: 30px; /* Ostidan 30px joy qo'shildi */
 }
 
